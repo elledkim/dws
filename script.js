@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function () {
             btn.innerHTML = 'Rescale';
             btn.onclick = function () {
                 if (shadedCountyCount > 0) {
-                    map.fitBounds(shadedBounds, {
+                    map.flyToBounds(shadedBounds, {
                         padding: [80, 80],
                         duration: 1
                     });
